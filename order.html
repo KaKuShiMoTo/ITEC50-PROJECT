@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>A&K Pastry Shop</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Long+Cang&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style3.css" />
+	</head>
+	<body>
+		<header>
+			<section role="banner">
+				<h1>PLEASE ORDER</h1>
+			</section>
+			<nav>
+				<ul>
+					<li><a href="index.html#welcome" class="current">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="order">
+				  <div>
+					<h2 class="w3-container w3-center w3-black w3-padding-32">PLACE YOUR ORDER</h2>
+				<form method="post" name="forms" action="form-processing.php" >
+
+	<!--PERSONAL INFORMATION -->
+          <fieldset>
+          <legend>Personal Information</legend>
+        <label>  First Name:</label>
+        <input type="text" name="fname" size=25/><br>
+          <label>Last Name:</label> <input type="text" name="lname" size=25/><br>
+         <label>Mobile #:</label> <input type="text" name="mobile" size=25 /><br>
+		 <label>Address: <textarea col=70 rows=1 name="address"></textarea></label>
+        </fieldset>
+		
+		<!--ORDER DETAILS -->
+		 <label>Delivery Date:</label><input type="date" name="date" /><br>
+		  <label>Delivery Time:</label><input type="time" name="time" /><br>
+		   <select name="payment"><label>Payment Method: </label><option>Select Payment Option</option>
+            <option value="1">GCash</option>
+            <option value="2">Bank Transfer</option>
+            <option value="3">Cash on Delivery</option>
+          </select>
+        </fieldset>
+		   <fieldset>
+          <legend>Choose your Order</legend>
+            <input type="checkbox" name="topping" value="1" /> Cream Brulee
+            <input type="checkbox" name="topping" value="2" /> Mochie
+            <input type="checkbox" name="topping" value="4" /> Apple Pie
+            <input type="checkbox" name="topping" value="5" /> Nainamo Bar
+            <input type="checkbox" name="topping" value="6" /> Gulab Jamun
+            <input type="checkbox" name="topping" value="7" /> Pakhlava
+            <input type="checkbox" name="topping" value="8" /> Kardinalschnitten
+            <input type="checkbox" name="topping" value="9" /> Dadar Gulung
+            <input type="checkbox" name="topping" value="10" />Poffertjes
+        </fieldset>
+		
+		<!--SPECIAL INSTRUCTIONS -->
+        <fieldset>
+          <legend>Special Instructions</legend>
+          <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+		<!--BUTTONS -->
+		
+        <input type="submit" value="PLACE YOUR ORDER" />
+        <input type="reset" value="START OVER" />
+      </div>
+					</div>
+					<article id="contactform">				
+
+					<h2 class="w3-container w3-center w3-black w3-padding-32">SEND YOUR MESSAGE</h2>
+
+					<form method="post">
+						<p class="formfields">
+							<label>Name</label>
+							<input
+							  type="text"
+							  name="yourname"
+							  value=""
+							  placeholder="Please enter your name"
+							/>
+						</p>
+						<p class="formfields">
+							<label>Email</label>
+							<input
+							  type="text"
+							  name="youremail"
+							  value=""
+							  placeholder="Please enter your email"
+							/>
+						</p>
+						<p class="formfields">
+							<label>Message</label>
+							<textarea
+							  name="yourmessage"
+							  placeholder="Please enter your message"
+							></textarea>
+						</p>
+						<p class="formfields">
+							<input type="checkbox" name="updateme" value="yes" /> Please send an
+							update.
+						</p>
+						<p class="formfields">
+							<input type="submit" value="Submit" />
+						</p>
+					</form>
+				</article>
+			</section>
+			      <hr>
+			      <div id="about" link: aboutus.html>
+			      </div>
+	</body>
+</html>
